@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>EMM GROUP: A PLACE WHERE YOUR BUSSINESS TURNS INTO PROFIT!!!!</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css"> 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+     
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About us</a>
+        </li>
+        <li>
+          <a href="#"> Learn Web Development</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="html.html">HTML</a>
+            </li>
+            <li>
+              <a href="css.html">CSS</a>
+            </li>
+            <li>
+              <a href="PhP.html">PhP</a>
+            </li>
+
+                        <li>
+              <a href="c.html">C#</a>
+            </li>
+            <li>
+              <a href="python.html.html">Python</a>
+            </li>
+                        <li>
+              <a href="js.html">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="source.html">Source code</a>
+          
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+</body>
+<script>
+  /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+</script>
+<h1>CSS TUTORIAL</h1>
+<h2>ABOUT CSS</h2>
+<h3><center>CSS is a language that describes the style of an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+This tutorial will teach you CSS from basic to advanced.</center></h3>
+<h1>CSS Example</h1>
+<h3>
+  body {<br>
+  background-color: lightblue;
+}<br>
+
+h1 {<br>
+  color: white;<br>
+  text-align: center;
+}<br>
+
+p {<br>
+  font-family: verdana;<br>
+  font-size: 20px;
+}<br>
+</h3>
+<h2>What is CSS?</h2>
+<h3><center>CSS stands for Cascading Style Sheets.
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+External stylesheets are stored in CSS files</center></h3>
+<h2>Why Use CSS?</h2>
+<h3><center>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+</center></h3>
+<h1>CSS example</h1>
+<h3>body {<br>
+  background-color: lightblue;
+}<br>
+
+h1 {<br>
+  color: white;<br>
+  text-align: center;
+}<br>
+
+p {<br>
+  font-family: verdana;<br>
+  font-size: 20px;
+}<br>
+</h3>
+<h2>CSS Solved a Big Problem</h2>
+<h3><center>HTML was NEVER intended to contain tags for formatting a web page!
+
+HTML was created to describe the content of a web page, like:
+
+< h1 >This is a heading< /h1 >
+
+< p >This is a paragraph.< /p >
+
+When tags like < font >, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+CSS removed the style formatting from the HTML page!
+<h3><center>If you don't know what HTML is, we suggest that you read our HTML Tutorial.
+
+</center></h3>
+</center></h3>
+<hr>
+<h2>CSS Saves a Lot of Work!</h2>
+<h3><center>The style definitions are normally saved in external .css files.
+
+With an external stylesheet file, you can change the look of an entire website by changing just one file!
+
+</center></h3><hr>
+<h2>How To Add CSS</h2>
+<h3><center>Three Ways to Insert CSS
+They are given below:-
+<br>
+1.External CSS<br>
+2.Internal CSS<br>
+3.Inline CSS<br>
+</center></h3><hr>
+<h2>External CSS</h2>
+<h3><center>With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the < link > element, inside the head section.
+</center></h3>
+<h3>Example<BR>External styles are defined within the < link > element, inside the < head > section of an HTML page:
+
+</h3>
+<h3>
+  < !DOCTYPE html><br>
+< html ><br>
+< head ><br>
+< link rel="stylesheet" type="text/css" href="mystyle.css"><br>
+< /head ><br>
+< body ><br>
+
+< h1>This is a heading< /h1 ><br>
+< p>This is a paragraph.< /p ><br>
+
+< /body><br>
+< /html></h3>
+<h3>CSS to give it with is given below:-</h3>
+<h3>body {<br>
+  background-color: lightblue;<br>
+}<br>
+
+h1 {<br>
+  color: navy;<br>
+  margin-left: 20px;<br>
+}</h3>
+<h3>Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;
+
+</h3><hr>
+<h2>INTERNAL CSS</h2>
+<h3><center>An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the < style > element, inside the head section.
+</center></h3>
+<h3>Example<BR>Internal styles are defined within the < style > element, inside the <head> section of an HTML page:</h3>
+  <h3>
+    < !DOCTYPE html><br>
+< html><br>
+< head><br>
+< style><br>
+body {<br>
+  background-color: linen;<br>
+}<br>
+
+h1 {<br>
+  color: maroon;<br>
+  margin-left: 40px;<br>
+}<br>
+< /style><br>
+< /head><br>
+< body><br>
+< h1>This is a heading< /h1><br>
+< p>This is a paragraph.< /p><br>
+
+< /body><br>
+< /html></h3><hr>
+<h2>Inline CSS</h2>
+<h3><center>An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</center></h3>
+<h3>Example<br>
+Inline styles are defined within the "style" attribute of the relevant element:</h3>
+<h3>
+  < !DOCTYPE html><br>
+< html><br>
+< body><br>
+
+< h1 style="color:blue;text-align:center;">This is a heading< /h1><br>
+< p style="color:red;">This is a paragraph.< /p><br>
+
+< /body><br>
+< /html>
+<br></h3>
+<h3>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</h3><hr>
+<marquee><h3>YOU HAVE COMPLETED A BASIC ON CSS.
+DUE TO SOME PROBLEM WE CANNOT UPLOAD MORE ON IT.WE WILL UPLOAD IT SOON....
+</h3></marquee>

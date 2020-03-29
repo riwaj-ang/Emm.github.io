@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>EMM GROUP: A PLACE WHERE YOUR BUSSINESS TURNS INTO PROFIT!!!!</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css"> 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+     
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About us</a>
+        </li>
+        <li>
+          <a href="#"> Learn Web Development</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="html.html">HTML</a>
+            </li>
+            <li>
+              <a href="css.html">CSS</a>
+            </li>
+            <li>
+              <a href="PhP.html">PhP</a>
+            </li>
+
+                        <li>
+              <a href="c.html">C#</a>
+            </li>
+            <li>
+              <a href="python.html">Python</a>
+            </li>
+                        <li>
+              <a href="js.html">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="source.html">Source code</a>
+          
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+</body>
+<script>
+  /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+</script>
+<h1>Javascript tutorial</h1>
+<h2>About javascript</h2>
+<h3><center>JavaScript is the programming language of HTML and the Web.
+
+JavaScript is easy to learn.
+
+This tutorial will teach you JavaScript from basic to advanced.</center></h3><hr>
+<h2>Why Study JavaScript?</h2>
+<h3><center>JavaScript is one of the 3 languages all web developers must learn:<br>
+
+   1. HTML to define the content of web pages<br>
+
+   2. CSS to specify the layout of web pages<br>
+
+   3. JavaScript to program the behavior of web pages<br>
+
+Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</center></h3><hr>
+<h2>Did You Know?</h2>
+<h3><center>JavaScript and Java are completely different languages, both in concept and design.
+
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+
+You can read more about the different JavaScript versions in the chapter JS Versions.</center></h3><hr>
+<h2>JavaScript Can Change HTML Content</h2>
+<h3><center>One of many JavaScript HTML methods is getElementById().
+
+This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</center></h3><hr>
+<marquee><h3>YOU HAVE COMPLETED A BASIC ON javascript.
+DUE TO SOME PROBLEM WE CANNOT UPLOAD MORE ON IT.WE WILL UPLOAD IT SOON....
+</h3></marquee>

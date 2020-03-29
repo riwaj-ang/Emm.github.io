@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- code by webdevtrick ( https://webdevtrick.com ) -->
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>EMM GROUP: A PLACE WHERE YOUR BUSSINESS TURNS INTO PROFIT!!!!</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About us</a>
+        </li>
+        <li>
+          <a href="#"> Learn Web Development</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="html.html">HTML</a>
+            </li>
+            <li>
+              <a href="css.html">CSS</a>
+            </li>
+            <li>
+              <a href="php.html">PhP</a>
+            </li>
+
+                        <li>
+              <a href="c.html">C#</a>
+            </li>
+            <li>
+              <a href="Python.html">Python</a>
+            </li>
+                        <li>
+              <a href="js.html">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="source.html">Source code</a>
+          </li>
+          <li>
+          <a href="contact.html">Contact</a>
+        </li>
+          </ul>
+        </li>
+  
+      </ul>
+    </nav>
+  </div>
+</section>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+</body>
+<script>
+  /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+</script>
+<style>
+
+</style>
+</html>
+<marquee><h3>CONTACT US AT COMPUTEERWORLD661@GMAIL.COM FOR MORE INFO</marquee></h3>

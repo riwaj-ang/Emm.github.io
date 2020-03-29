@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>EMM GROUP: A PLACE WHERE YOUR BUSSINESS TURNS INTO PROFIT!!!!</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css"> 
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+     
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="aboutus.html">About us</a>
+        </li>
+        <li>
+          <a href="#"> Learn Web Development</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="html.html">HTML</a>
+            </li>
+            <li>
+              <a href="css.html">CSS</a>
+            </li>
+            <li>
+              <a href="php.html">PhP</a>
+            </li>
+
+                        <li>
+              <a href="c.html">C#</a>
+            </li>
+            <li>
+              <a href="Python.html">Python</a>
+            </li>
+                        <li>
+              <a href="js.html">JavaScript</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="source.html">Source code</a>
+         
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  src="function.js"></script>
+</body>
+<script>
+  /** code by webdevtrick ( https://webdevtrick.com ) **/
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+</script>
+<h2>Create a Website using HTML & CSS!!</h2>
+<h3>
+  < !DOCTYPE html><br>
+< html><br>
+< head><br>
+ < title>< /title><br>
+ < link rel="stylesheet" type="text/css" href="css/style.css"><br>
+ < link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"><br>
+< /head><br>
+< body><br>
+< header><br>
+ < div class="mainheader"><br>
+  < div class="logo"><br>
+   < img src="images/logo.png"><br>
+  < /div><br>
+
+  < nav><br>
+   < a href="#">home< /a><br>
+   < a href="#">services< /a> <br>
+   < a href="#">about< /a><br>
+   < a href="#" target="_blank">contact< /a><br>
+  < /nav><br>
+
+  < div class="menubtn"><br>
+   < button> HelpLine< /button><br>
+  < /div><br>
+ < /div><br>
+
+ < main><br>
+  < section class="left-sec"><br>
+   < h2> .....< /h2><br>
+   < h1> ..< /h1><br>
+   < p>.....< /p><br>
+   < button><br>
+     Make an appointment
+   < /button><br>
+  < /section><br>
+
+  < section class="right-sec"><br>
+   < figure><br>
+    < img src="images/mainbg.png"><br>
+   < /figure><br>
+  < /section><br>
+ < /main><br>
+< /header><br>
+< /body><br>
+< /html><br>
+
+
+STYLE <br>
+*{<br>
+margin: 0;<br> padding: 0;<br>
+box-sizing: border-box;<br>
+font-family: 'Josefin Sans', sans-serif;<br>
+}
+
+header{<br>
+ width: 100%;<br>
+ height: 100vh;<br>
+ background-image: url('');<br>
+ background-repeat: no-repeat;<br>
+ background-size: 100% 100%;<br>
+
+}<br>
+
+.mainheader{<br>
+ width: 100%;<br>
+ height: 100px;<br>
+ display: flex;<br>
+ justify-content: space-between;<br>
+ align-items: center;<br>
+}<br>
+
+.mainheader .logo img{<br>
+ width: 250px; height: 70px;<br>
+ padding-left: 60px;<br>
+}<br>
+
+.mainheader nav{<br>
+ width: 450px;<br>
+ display: flex;<br>
+ justify-content: space-around;<br>
+ align-items: center;<br>
+}<br>
+
+.mainheader nav a{<br>
+ text-decoration: none;<br>
+ color: black;<br>
+ text-transform: uppercase;<br>
+}<br>
+
+.menubtn{<br>
+ margin-right: 60px;<br>
+}<br>
+.mainheader button{<br>
+ padding: 10px 45px;<br>
+ text-align: center;<br>
+ font-size: 14px;<br>
+ color: #fff;<br>
+ border: none;<br>
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);<br>
+ border-radius: 10px;<br>
+}<br>
+
+
+main{<br>
+ width: 100%;<br>
+ display: flex;<br>
+ justify-content: space-between;<br>
+ align-items: center;<br>
+}<br>
+
+main .right-sec{<br>
+ padding-right: 70px;<br>
+}
+<br>
+main .left-sec{<br>
+ padding-left: 100px;<br>
+}
+<br>
+.left-sec h2{<br>
+ font-size: 20px;<br>
+ text-transform: capitalize;<br>
+ font-weight: lighter;<br>
+ color: #242424;<br>
+ margin-top: 100px;<br>
+}<br>
+
+.left-sec h1{<br>
+ font-size: 55px;<br>
+ text-transform: capitalize;<br>
+ font-weight: 700;<br>
+ margin: 15px 0;<br>
+}
+<br>
+.left-sec p{<br>
+ margin-bottom: 20px;<br>
+}
+<br>
+.left-sec button{<br>
+ padding: 15px 45px;<br>
+ text-align: center;<br>
+ font-size: 14px;<br>
+ color: #fff;<br>
+ border: none;<br>
+ background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);<br>
+ border-radius: 10px;<br>
+}<br>
+</h3>
+<hr>
+  <h2>Create facebook in just a minute !! check it out guys</h2>
+
+<h3>
+<div>
+<code>&nbsp;</code><span style="font-family: monospace;">&lt;script&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">let database = [</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>username : 'Riwaj',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>password : 'Parajuli',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>}</span><br>
+<span style="font-family: monospace;">];</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">let status = [</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>name : 'riwaj',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>status : 'I am youtuber',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>},</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>name : ' parajuli',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>status : 'I will help  you',</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>}</span><br>
+<span style="font-family: monospace;">];</span><br>
+<span style="white-space: pre;"><span style="font-family: monospace;"> </span></span><br>
+<span style="font-family: monospace;">const username = prompt('Enter your username');</span><br>
+<span style="font-family: monospace;">const password = prompt('Enter your password');</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">const login = (user, pass) =&gt;&nbsp; {</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>if(user === database[0].username &amp;&amp; pass === database[0].password){</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>// console.log(status);</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>for (let value of status){</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">    </span>console.log(value);</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>}</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>}else{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>alert('Username or password is incorrect');</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>}</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">login(username,password );</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">&lt;/script&gt;</span></div>
+</h3>
+<hr>
+<h2>Create a login form in a minute!!</h2>
+<h3>
+<div style="background-color: rgb(204 , 204 , 204); display: block; height: auto; margin: auto; width: 80%;">
+<br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+<span style="white-space: pre;"> </span>&lt;head&gt;<br>
+<span style="white-space: pre;">  </span>&lt;meta charset="UTF-8"&gt;<br>
+<span style="white-space: pre;">  </span>&lt;title&gt;LoginForm&lt;/title&gt;<br>
+<span style="white-space: pre;">  </span>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+<span style="white-space: pre;">  </span>&lt;link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet"&gt;<br>
+<span style="white-space: pre;"> </span>&lt;/head&gt;<br>
+<span style="white-space: pre;"> </span>&lt;body&gt;<br>
+<span style="white-space: pre;">  </span>&lt;div class="bgimg"&gt;<br>
+<span style="white-space: pre;">   </span>&lt;div class="centerdiv"&gt;<br>
+<span style="white-space: pre;">    </span>&lt;img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-128.png" id="profilepic"&gt;<br>
+<span style="white-space: pre;">    </span>&lt;h2&gt;user login&lt;/h2&gt;<br>
+<span style="white-space: pre;">    </span>&lt;form&gt;<br>
+<span style="white-space: pre;">     </span>&lt;div&gt;<br>
+<span style="white-space: pre;">      </span>&lt;input type="text" name="" class="inputbox" placeholder="Username"&gt;<br>
+<span style="white-space: pre;">     </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">     </span>&lt;br&gt;<br>
+<span style="white-space: pre;">     </span>&lt;div&gt;<br>
+<span style="white-space: pre;">      </span>&lt;input type="Password" name="" class="inputbox" placeholder="Password"&gt;<br>
+<span style="white-space: pre;">     </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">     </span>&lt;br&gt;<br>
+<span style="white-space: pre;">     </span>&lt;div&gt;<br>
+<span style="white-space: pre;">      </span>&lt;button type="submit"&gt; LOGIN &lt;/button&gt;<br>
+<span style="white-space: pre;">     </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">    </span>&lt;/form&gt; &lt;br&gt;<br>
+<span style="white-space: pre;">    </span>&lt;div class="FORGOT-SECTION"&gt;<br>
+<span style="white-space: pre;">     </span>&lt;h4&gt;Forget Password?&lt;/h4&gt;<br>
+<span style="white-space: pre;">    </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">   </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">  </span>&lt;/div&gt;<br>
+<span style="white-space: pre;">  </span><br>
+<span style="white-space: pre;"> </span>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<br></div>
+<h2>style</h2>
+<h3>
+<div style="background-color: rgb(204 , 204 , 204); display: block; height: auto; margin: auto; padding-left: 5px; width: 80%;">
+*{<br>
+<span style="white-space: pre;"> </span>margin: 0;<br>
+<span style="white-space: pre;"> </span>padding: 0;<br>
+<span style="white-space: pre;"> </span>font-family: 'Cinzel', serif;<br>
+}<br>
+<br>
+.bgimg{<br>
+<span style="white-space: pre;"> </span>width: 100%;<br>
+<span style="white-space: pre;"> </span>height: 100vh;<br>
+<span style="white-space: pre;"> </span>background-image: linear-gradient(27deg, #004E95 50%, #013A6B 50%);<br>
+}<br>
+<br>
+.centerdiv{<br>
+<span style="white-space: pre;"> </span>width: 350px;<br>
+<span style="white-space: pre;"> </span>height: 400px;<br>
+<span style="white-space: pre;"> </span>position: absolute;<br>
+<span style="white-space: pre;"> </span>top: 50%;<br>
+<span style="white-space: pre;"> </span>left: 50%;<br>
+<span style="white-space: pre;"> </span>background-color: red;<br>
+<span style="white-space: pre;"> </span>transform: translate(-50%, -50%);<br>
+<span style="white-space: pre;"> </span>background-image: linear-gradient(27deg, #013A6B 50%, #004E95 50%);<br>
+<span style="white-space: pre;"> </span>box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);<br>
+}<br>
+<br>
+#profilepic{<br>
+<span style="white-space: pre;"> </span>width: 120px;<br>
+<span style="white-space: pre;"> </span>height: 120px;<br>
+<span style="white-space: pre;"> </span>border-radius: 50%;<br>
+<span style="white-space: pre;"> </span>position: relative;<br>
+<span style="white-space: pre;"> </span>top: -60px;<br>
+<span style="white-space: pre;"> </span>left: calc( (350px - 120px) / 2 )<br>
+}<br>
+<br>
+h2{<br>
+<span style="white-space: pre;"> </span>text-align: center;<br>
+<span style="white-space: pre;"> </span>color: white;<br>
+<span style="white-space: pre;"> </span>text-transform: uppercase;<br>
+<span style="white-space: pre;"> </span>font-size: 2em;<br>
+<span style="white-space: pre;"> </span>word-spacing: 10px;<br>
+<span style="white-space: pre;"> </span>margin-top: -50px;<br>
+<span style="white-space: pre;"> </span>margin-bottom: 50px;<br>
+<span style="white-space: pre;"> </span>text-shadow: -2px 2px 1px #0A84C6;<br>
+}<br>
+<br>
+.inputbox{<br>
+<span style="white-space: pre;"> </span>width: calc(100% - 40px);<br>
+<span style="white-space: pre;"> </span>height: 30px;<br>
+<span style="white-space: pre;"> </span>display: block;<br>
+<span style="white-space: pre;"> </span>margin: auto;<br>
+<span style="white-space: pre;"> </span>padding: 0 10px;<br>
+<span style="white-space: pre;"> </span>box-sizing: border-box;<br>
+}<br>
+<br>
+::placeholder{<br>
+<span style="white-space: pre;"> </span>letter-spacing: 2px;<br>
+<span style="white-space: pre;"> </span>color: black;<br>
+}<br>
+<br>
+button{<br>
+<span style="white-space: pre;"> </span>width: calc(100% - 40px);<br>
+<span style="white-space: pre;"> </span>height: 30px;<br>
+<span style="white-space: pre;"> </span>display: block;<br>
+<span style="white-space: pre;"> </span>margin: auto;<br>
+<span style="white-space: pre;"> </span>color: white;<br>
+<span style="white-space: pre;"> </span>background-color: #0A84C6;<br>
+<span style="white-space: pre;"> </span>border: none;<br>
+}<br>
+<br>
+.FORGOT-SECTION{<br>
+<span style="white-space: pre;"> </span>width: calc(100% - 40px);<br>
+<span style="white-space: pre;"> </span>line-height: 30px;<br>
+<span style="white-space: pre;"> </span>display: block;<br>
+<span style="white-space: pre;"> </span>margin: auto;<br>
+<span style="white-space: pre;"> </span>color: white;<br>
+<span style="white-space: pre;"> </span>background-color: dodgerblue;<br>
+<span style="white-space: pre;"> </span>text-transform: uppercase;<br>
+<span style="white-space: pre;"> </span>font-size: 0.8em;<br>
+<span style="white-space: pre;"> </span>text-align: right;<br>
+<span style="white-space: pre;"> </span>padding-right: 20px;<br>
+<span style="white-space: pre;"> </span>box-sizing: border-box;<br>
+<br>
+}</div>
+</h3>
+</h3>
+<hr>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h2 style="background: rgb(255, 255, 255); border: 0px; color: var(--ytd-video-primary-info-renderer-title-color, var(--yt-spec-text-primary)); font-family: Roboto, Arial, sans-serif; font-size: var(--ytd-video-primary-info-renderer-title-font-size, 1.8rem); font-weight: 400; line-height: 2.4rem; margin: 0px; max-height: 4.8rem; overflow: hidden; padding: 0px; text-align: center; text-shadow: var(--ytd-video-primary-info-renderer-title-text-shadow, none); transform: var(--ytd-video-primary-info-renderer-title-transform, none);">
+<h2>CREATE A RESPONSIVE WEBSITE</h2>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+</div>
+<div style="text-align: center;">
+<div style="text-align: center;">
+<br></div>
+<div style="text-align: left;">
+<br></div>
+<div style="text-align: left;">
+<br></div>
+</div>
+<h3 style="text-align: left;">
+<h2>HTML CODE</h2>
+<code><br></code>
+<h3>
+<span style="font-family: monospace;">&lt;!DOCTYPE html&gt;</span><br>
+<span style="font-family: monospace;">&lt;html&gt;</span><br>
+<span style="font-family: monospace;">&lt;head&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;title&gt;&lt;/title&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span> &lt;meta charset="utf-8"&gt;&nbsp;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span> &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;link href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap" rel="stylesheet"&gt;</span><br>
+<span style="font-family: monospace;">&nbsp;&lt;link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span><br>
+<span style="font-family: monospace;">&lt;/head&gt;</span><br>
+<span style="font-family: monospace;">&lt;body&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">&lt;div class="container-fluid text-white"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;nav class="row py-4"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;div class="col-lg-6 col-md-6 col-12&nbsp; logo"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;h1&gt; CBG &lt;/h1&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;div class="col-lg-6 col-md-6 col-12&nbsp; "&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;ul class="d-flex&nbsp; justify-content-around align-items-center list-unstyled text-uppercase"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">    </span>&lt;li&gt; home &lt;/li&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">    </span>&lt;li&gt;about &lt;/li&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">    </span>&lt;li&gt; contact &lt;/li&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;/ul&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;/nav&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+
+
+&nbsp;
+<span style="font-family: monospace;"><br></span><span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;div class="row main-content "&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;div class="col-md-6 col-12 leftside"&gt; &lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;div class="col-md-6 col-12 rightside d-flex justify-content-center align-items-center"&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;div class="right-content w-50 "&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;h1&gt;... &lt;br&gt; ....&lt;/h1&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;p&gt;....&nbsp; &nbsp; .....&nbsp; &nbsp; &nbsp; ........</span><br>
+<span style="font-family: monospace;">&nbsp;.................&lt;/p&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;button&gt; Read More&lt;/button&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">   </span>&lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">  </span>&lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>&lt;/div&gt;</span><br>
+<span style="font-family: monospace;">&lt;/div&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">&lt;/body&gt;</span><br>
+<code></code><br>
+<span style="font-family: monospace;">&lt;/html&gt;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;"><br></span>
+<br>
+<h3 style="text-align: left;">
+<span style="color: purple; font-family: monospace;"><br></span></h3>
+<h3 style="text-align: left;">
+</h3>
+<h2>CSS CODE</h2>
+<div>
+<span style="color: purple; font-family: monospace;"><br></span></div>
+<br>
+ <h3>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">*{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>margin: 0; padding: 0; box-sizing: border-box;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>transition:background 0.3s linear;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-family: 'Oswald', sans-serif;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">@font-face{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-family: chinafont;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>src:url(china.ttf);</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.logo h1{</span><br>
+<span style="font-family: monospace;">font-family: chinafont;</span><br>
+<span style="font-family: monospace;">transition:color 0.5s linear;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.logo h1:hover{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>color: red;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">ul li:hover{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>color: rgba(255,0,0,1);</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>cursor: pointer;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.main-content{</span><br>
+<span style="font-family: monospace;">position: absolute;</span><br>
+<span style="font-family: monospace;">top: 0;</span><br>
+<span style="font-family: monospace;">width: 100%;</span><br>
+<span style="font-family: monospace;">z-index: -1;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.leftside{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background-image: linear-gradient(to left,rgba(0,0,0,0.1),rgba(0,0,0,0.2)),&nbsp;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;">      </span>url('bg.jpg');</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>width: 100%; height: 100vh;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background-repeat: no-repeat;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background-size: cover;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background-position: center;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<br>
+&nbsp;
+<span style="font-family: monospace;">.rightside{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background: #000;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.right-content h1{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-size: 35px;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-weight: 400;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>letter-spacing: 0.06em;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>line-height: 1.25;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>padding: 30px 0 35px 0;</span><br>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">.right-content p{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>border-left: 1px solid #555;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-weight: 100;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-family: 'Raleway', sans-serif;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>padding: 50px 30px;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-size: 0.9em;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">button{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>border:none;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background: #fff;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>letter-spacing: 0.25em;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-weight: 700;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>font-size: 10px;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>text-transform: uppercase;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>color: #111;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>padding: 15px 25px;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>margin: 30px 0 0 30px;</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>transition: all 0.3s linear;</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">}</span><br>
+<span style="font-family: monospace;"><br></span>
+<span style="font-family: monospace;">button:hover{</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>background: rgba(255,0,0,0.7);</span><br>
+<span style="font-family: monospace;"><span style="white-space: pre;"> </span>color: white;</span><br>
+<span style="font-family: monospace;"></span><br>
+<span style="font-family: monospace;">}</span></div>
+</h3>
+
+<hr>
+
+
+
+
+
+
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h2 style="background: rgb(255, 255, 255); border: 0px; color: var(--ytd-video-primary-info-renderer-title-color, var(--yt-spec-text-primary)); font-family: Roboto, Arial, sans-serif; font-size: var(--ytd-video-primary-info-renderer-title-font-size, 1.8rem); font-weight: 400; line-height: 2.4rem; margin: 0px; max-height: 4.8rem; overflow: hidden; padding: 0px; text-align: center; text-shadow: var(--ytd-video-primary-info-renderer-title-text-shadow, none); transform: var(--ytd-video-primary-info-renderer-title-transform, none);">
+<h2>Creata a  music player app in a minute</h2>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+<div>
+<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style=""><br></yt-formatted-string></div>
+</div>
+<div style="text-align: center;">
+<div style="text-align: center;">
+<br></div>
+<div style="text-align: center;">
+&nbsp;</div>
+<div style="text-align: center;">
+<br></div>
+<div style="text-align: left;">
+<br></div>
+<h2 style="text-align: left;">
+<h2>HTML SOURCE CODE</h2>
+<div style="text-align: left;">
+<br></div>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+<span style="white-space: pre;"> </span>&lt;title&gt;&lt;/title&gt;<br>
+<span style="white-space: pre;"> </span>&lt;link href="https://fonts.googleapis.com/css?family=Maven+Pro&amp;display=swap" rel="stylesheet"&gt;<br>
+<span style="white-space: pre;"> </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /&gt;<br>
+<span style="white-space: pre;"> </span>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1&gt;&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt;&lt;i class="fa fa-music" aria-hidden="true"&gt;&lt;/i&gt; &lt;/h1&gt;<br>
+&lt;h1&gt;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <br>
+&nbsp;&nbsp; &lt;/h1&gt;<br>
+<br>
+&lt;main&gt;<br>
+<span style="white-space: pre;">  </span><br>
+&lt;div class="a song"&gt;a&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="b song"&gt;b&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="c song"&gt;c&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+<br>
+&lt;div class="d song"&gt;d&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="e song"&gt;e&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="f song"&gt;f&lt;/div&gt;<br>
+<br>
+&lt;div class="g song"&gt;g&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="h song"&gt;h&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+&lt;div class="i song"&gt;i&lt;/div&gt;<span style="white-space: pre;"> </span><br>
+<span style="white-space: pre;"> </span><br>
+&lt;/main&gt;<br>
+<br>
+<br>
+<br>
+&lt;script&gt;<br>
+<span style="white-space: pre;"> </span><br>
+var divlenght = document.querySelectorAll('.song').length;<br>
+console.log(divlenght);<br>
+<br>
+for(var i=0; i&lt;divlenght; i++) {<br>
+<span style="white-space: pre;"> </span>var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);<br>
+<br>
+<span style="white-space: pre;"> </span>var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);<br>
+}<br>
+<br>
+var song1 = new Audio();<br>
+song1.src = "music/alan.mp3";<br>
+<br>
+var song2 = new Audio();<br>
+song2.src = "music/alan2.mp3";<br>
+<br>
+var song3 = new Audio();<br>
+song3.src = "music/alan3.mp3";<br>
+<br>
+function playsong(){<br>
+<span style="white-space: pre;"> </span>var songId = this.innerHTML;<br>
+<span style="white-space: pre;"> </span>console.log(songId);<br>
+<br>
+<span style="white-space: pre;"> </span>switch (songId) {<br>
+<span style="white-space: pre;">  </span>case "a":<br>
+<span style="white-space: pre;">   </span>song1.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "b":<br>
+<span style="white-space: pre;">   </span>song2.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "c":<br>
+<span style="white-space: pre;">   </span>song3.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "d":<br>
+<span style="white-space: pre;">   </span>song1.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "e":<br>
+<span style="white-space: pre;">   </span>song2.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "f":<br>
+<span style="white-space: pre;">   </span>song3.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "g":<br>
+<span style="white-space: pre;">   </span>song1.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "h":<br>
+<span style="white-space: pre;">   </span>song2.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "i":<br>
+<span style="white-space: pre;">   </span>song3.play();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>default:<br>
+<span style="white-space: pre;">   </span>console.log("wrong input");<br>
+<span style="white-space: pre;">   </span>break;<br>
+<span style="white-space: pre;"> </span>}<br>
+}<br>
+<br>
+function pausesong(){<br>
+<span style="white-space: pre;"> </span>var songId = this.innerHTML;<br>
+<span style="white-space: pre;"> </span>console.log(songId);<br>
+<br>
+<span style="white-space: pre;"> </span>switch (songId) {<br>
+<span style="white-space: pre;">  </span>case "a":<br>
+<span style="white-space: pre;">   </span>song1.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "b":<br>
+<span style="white-space: pre;">   </span>song2.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "c":<br>
+<span style="white-space: pre;">   </span>song3.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "d":<br>
+<span style="white-space: pre;">   </span>song1.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "e":<br>
+<span style="white-space: pre;">   </span>song2.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "f":<br>
+<span style="white-space: pre;">   </span>song3.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "g":<br>
+<span style="white-space: pre;">   </span>song1.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "h":<br>
+<span style="white-space: pre;">   </span>song2.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>case "i":<br>
+<span style="white-space: pre;">   </span>song3.pause();<br>
+<span style="white-space: pre;">   </span>break;<br>
+<br>
+<span style="white-space: pre;">  </span>default:<br>
+<span style="white-space: pre;">   </span>console.log("wrong input");<br>
+<span style="white-space: pre;">   </span>break;<br>
+<span style="white-space: pre;"> </span>}<br>
+}<br>
+<br>
+<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<br>
+<br>
+<br>
+<h2>CSS Source code</h2>
+<br>
+*{<br>
+<span style="white-space: pre;"> </span>margin: 0; padding: 0;<br>
+<span style="white-space: pre;"> </span>box-sizing: border-box; font-family: 'Maven Pro', sans-serif;<br>
+}<br>
+<br>
+h1{<br>
+<span style="white-space: pre;"> </span>text-align: center; font-size: 1.8rem;<br>
+<span style="white-space: pre;"> </span>color: #444; padding: 30px 0;<span style="white-space: pre;"> </span><br>
+}<br>
+<br>
+main{<br>
+<span style="white-space: pre;"> </span>width: 90%; height: 550px;<br>
+<span style="white-space: pre;"> </span>margin: auto; border: 1px solid black;<br>
+<span style="white-space: pre;"> </span>display: flex; justify-content: space-around;<br>
+<span style="white-space: pre;"> </span>align-items: center; flex-wrap: wrap;<br>
+}<br>
+<br>
+div{<br>
+<span style="white-space: pre;"> </span>width: 30%; height: 160px;<br>
+<span style="white-space: pre;"> </span>/*border: 1px solid red;*/<br>
+<span style="white-space: pre;"> </span>box-shadow: 2px 2px 5px grey;<br>
+<span style="white-space: pre;"> </span>border-radius: 10px; cursor: pointer;<br>
+<br>
+}<br>
+<br>
+.a{<br>
+<span style="white-space: pre;"> </span> background-image: url('images/js2.jpg');<br>
+<span style="white-space: pre;"> </span> background-repeat: no-repeat;<br>
+<span style="white-space: pre;"> </span> background-size: 100% 100%;<br>
+}<br>
+<br>
+.b{<br>
+background-image: url('images/js10.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<br>
+.c{<br>
+background-image: url('images/js13.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<br>
+.d{<br>
+background-image: url('images/js4.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<br>
+.e{<br>
+background-image: url('images/js5.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+.f{<br>
+background-image: url('images/js11.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+.g{<br>
+background-image: url('images/js7.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<br>
+.h{<br>
+background-image: url('images/js14.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<br>
+.i{<br>
+background-image: url('images/js12.jpg');<br>
+background-size: 100% 100%;<br>
+background-repeat: no-repeat;<br>
+}<br>
+<div>
+<br></div>
+</div>
+<hr>
+<h2><marquee>WE WILL PROVIDE YOU MORE SOURCE CODE SOON.HOPE YOU GUYS ENJOY IT.......</marquee></h2>
